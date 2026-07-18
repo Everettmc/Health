@@ -1,0 +1,88 @@
+{
+  "quests": [
+    {
+      "id": "golden_acorn",
+      "title": "The Golden Acorn",
+      "stops": [
+        {
+          "id": "village_square",
+          "scene": "At the fountain, 3 ducks are swimming, and 2 more just waddled up to join them.",
+          "challenge": {
+            "type": "math",
+            "prompt": "How many ducks are at the fountain now?",
+            "answer": 5,
+            "hints": [
+              "Try counting up! Start at 3, then count 2 more.",
+              "Three... four... five! How many is that?"
+            ]
+          },
+          "apl": { "bg": ["#F6D365", "#FDA085"], "emoji": "🦆", "title": "Village Square" }
+        },
+        {
+          "id": "bakery",
+          "scene": "Mmm, you smell fresh bread! Baker Bo has a riddle for you before he'll share a treat.",
+          "challenge": {
+            "type": "riddle",
+            "prompt": "I'm fluffy, I say cluck cluck, and I lay the eggs Baker Bo uses for muffins. What am I?",
+            "answer": "chicken",
+            "synonyms": ["hen"],
+            "hints": [
+              "You'd find me in a henhouse on the farm!",
+              "I go cluck cluck and I have feathers."
+            ]
+          },
+          "apl": { "bg": ["#FDCB82", "#F7A072"], "emoji": "🥐", "title": "The Bakery" }
+        },
+        {
+          "id": "old_bridge",
+          "scene": "A friendly troll guards the Old Bridge. He says the only way across is to march right over it!",
+          "challenge": {
+            "type": "move",
+            "prompt": "Stomp across the troll bridge TEN times, then say 'I made it!'",
+            "waiting_prompt": "Take your time, I can hear you stomping!"
+          },
+          "apl": { "bg": ["#89CFF0", "#6A82FB"], "emoji": "🌉", "title": "The Old Bridge" }
+        },
+        {
+          "id": "whispering_woods",
+          "scene": "The trees are whispering a puzzle! A wise owl counted 6 shiny acorns under her tree, then spotted one more.",
+          "challenge": {
+            "type": "math",
+            "prompt": "How many acorns did the owl find in all?",
+            "answer": 7,
+            "hints": [
+              "One more than 6... what comes right after 6 when you count?",
+              "Six... then one more is seven!"
+            ]
+          },
+          "apl": { "bg": ["#3E8E41", "#7ED957"], "emoji": "🦉", "title": "Whispering Woods" }
+        },
+        {
+          "id": "sunny_beach",
+          "scene": "The waves are sparkling! A friendly crab pokes out of the sand with one more riddle.",
+          "challenge": {
+            "type": "riddle",
+            "prompt": "I live in the sea, I have eight wiggly arms, and I love to hide in the sand. What am I?",
+            "answer": "octopus",
+            "synonyms": [],
+            "hints": [
+              "I squirt ink and I'm super squishy!",
+              "Count my arms... one, two, three... all the way to eight!"
+            ]
+          },
+          "apl": { "bg": ["#00C9FF", "#FFDE59"], "emoji": "🐙", "title": "Sunny Beach" }
+        },
+        {
+          "id": "treasure_cave",
+          "scene": "You made it to Treasure Cave! The treasure chest is glowing, but it only opens for a true treasure dance.",
+          "challenge": {
+            "type": "move",
+            "prompt": "Spin around three times and shout 'Treasure time!' to open the chest.",
+            "waiting_prompt": "I can feel the magic building, keep going!"
+          },
+          "apl": { "bg": ["#F7971E", "#FFD200"], "emoji": "💎", "title": "Treasure Cave" }
+        }
+      ]
+    }
+  ]
+}

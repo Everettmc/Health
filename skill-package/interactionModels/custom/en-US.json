@@ -1,0 +1,130 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "treasure village",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerNumberIntent",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{number}",
+            "it's {number}",
+            "its {number}",
+            "the answer is {number}",
+            "i think {number}",
+            "i think it's {number}",
+            "um {number}",
+            "maybe {number}"
+          ]
+        },
+        {
+          "name": "AnswerWordIntent",
+          "slots": [
+            {
+              "name": "answer",
+              "type": "RIDDLE_ANSWERS"
+            }
+          ],
+          "samples": [
+            "{answer}",
+            "it's a {answer}",
+            "it's {answer}",
+            "the answer is {answer}",
+            "i think {answer}",
+            "i think it's a {answer}",
+            "maybe a {answer}",
+            "a {answer}"
+          ]
+        },
+        {
+          "name": "DoneIntent",
+          "samples": [
+            "done",
+            "i'm done",
+            "i made it",
+            "i did it",
+            "finished",
+            "i finished",
+            "all done",
+            "ready",
+            "i'm ready"
+          ]
+        },
+        {
+          "name": "HintIntent",
+          "samples": [
+            "hint",
+            "give me a hint",
+            "help me",
+            "i don't know",
+            "give me a clue",
+            "what",
+            "i need a hint",
+            "can you help me",
+            "help"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "RIDDLE_ANSWERS",
+          "values": [
+            {
+              "id": "chicken",
+              "name": {
+                "value": "chicken",
+                "synonyms": [
+                  "hen"
+                ]
+              }
+            },
+            {
+              "id": "octopus",
+              "name": {
+                "value": "octopus",
+                "synonyms": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
