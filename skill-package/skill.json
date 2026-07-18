@@ -1,0 +1,45 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Treasure Village",
+          "summary": "A voice-first treasure-hunt adventure for kids on Fire TV.",
+          "description": "Treasure Village is a family, at-home treasure hunt. Explore a village on screen and solve a math problem, riddle, or movement challenge at each stop by speaking your answer into the Fire TV remote. Collect all six map pieces to find the treasure!",
+          "examplePhrases": [
+            "Alexa, open treasure village",
+            "Alexa, play treasure village"
+          ],
+          "keywords": ["kids", "family", "game", "adventure", "learning"]
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Development-stage skill for personal family use only. Not intended for certification or store submission.",
+      "category": "GAME_INFO",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        },
+        "interfaces": [
+          { "type": "ALEXA_PRESENTATION_APL" }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": ""
+        }
+      }
+    }
+  }
+}

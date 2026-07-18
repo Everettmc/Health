@@ -1,0 +1,56 @@
+{
+  "type": "APL",
+  "version": "2024.3",
+  "theme": "dark",
+  "background": "${payload.sceneData.properties.background}",
+  "mainTemplate": {
+    "parameters": ["payload"],
+    "items": [
+      {
+        "type": "Container",
+        "width": "100vw",
+        "height": "100vh",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "items": [
+          {
+            "type": "Text",
+            "text": "${payload.sceneData.properties.emoji}",
+            "fontSize": "220dp",
+            "textAlign": "center"
+          },
+          {
+            "type": "Text",
+            "text": "${payload.sceneData.properties.title}",
+            "fontSize": "72dp",
+            "fontWeight": "bold",
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "paddingTop": "20dp"
+          }
+        ]
+      },
+      {
+        "type": "Container",
+        "position": "absolute",
+        "bottom": "40dp",
+        "width": "100vw",
+        "direction": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "data": "${payload.sceneData.properties.pieces}",
+        "items": [
+          {
+            "type": "Frame",
+            "width": "28dp",
+            "height": "28dp",
+            "borderRadius": "14dp",
+            "marginLeft": "8dp",
+            "marginRight": "8dp",
+            "backgroundColor": "${data.filled ? '#FFD700' : 'rgba(255,255,255,0.35)'}"
+          }
+        ]
+      }
+    ]
+  }
+}
