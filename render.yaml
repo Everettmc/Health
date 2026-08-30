@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: curb-backend
+    runtime: python
+    plan: free
+    rootDir: realestate/backend
+    buildCommand: pip install --upgrade pip "setuptools<70" wheel && pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+
+  - type: web
+    name: curb-frontend
+    runtime: node
+    plan: free
+    rootDir: realestate/frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: BACKEND_HOST
+        fromService:
+          type: web
+          name: curb-backend
+          property: host
